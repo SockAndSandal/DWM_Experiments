@@ -11,7 +11,6 @@ from sklearn.datasets import load_iris
 # Load Iris Data
 iris = load_iris()
 
-# Creating pd DataFrames
 iris_df = pd.DataFrame(data= iris.data, columns= iris.feature_names)
 target_df = pd.DataFrame(data= iris.target, columns= ['species'])
 
@@ -54,6 +53,7 @@ plt.xlabel('Petal Length (cm)', fontsize=18)
 plt.ylabel('Petal Width (cm)', fontsize=18)
 
 plt.show()
+print('\n')
 
 #Multiple Regression
 
